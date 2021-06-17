@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Student Page!!
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Age</th>
+    </tr>
+   <tr th:each="students: ${studentList}">
+       <td th:text="${students.name}" />
+       <td th:text="${students.age}" />
+
+   </tr>
+
+</table>
+
+</body>
+</html>
